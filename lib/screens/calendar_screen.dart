@@ -33,8 +33,8 @@ class _CalendarScreenState extends State<CalendarScreen> {
     return Card(
       margin: const EdgeInsets.all(16),
       child: TableCalendar(
-        firstDay: DateTime.utc(2024, 1, 1),
-        lastDay: DateTime.utc(2025, 12, 31),
+        firstDay: DateTime.utc(2025, 1, 1),
+        lastDay: DateTime.utc(2026, 12, 31),
         focusedDay: _focusedDate,
         selectedDayPredicate: (day) => isSameDay(_selectedDate, day),
         onDaySelected: (selectedDay, focusedDay) {
@@ -83,7 +83,7 @@ class _CalendarScreenState extends State<CalendarScreen> {
           const SizedBox(height: 12),
           _buildInfoCard(
             'Perkiraan Kelahiran',
-            '15 September 2024',
+            '15 September 2025',
             Icons.child_care,
           ),
           const SizedBox(height: 12),

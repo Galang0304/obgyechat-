@@ -81,7 +81,7 @@ class HomeScreen extends StatelessWidget {
                 children: [
                   _buildPregnancyInfo('Usia Kehamilan', '12 Minggu'),
                   const VerticalDivider(),
-                  _buildPregnancyInfo('Perkiraan Lahir', '15 Sep 2024'),
+                  _buildPregnancyInfo('Perkiraan Lahir', '15 Sep 2025'),
                 ],
               ),
             ),
@@ -271,7 +271,7 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
               title: const Text('Pemeriksaan USG'),
-              subtitle: const Text('20 April 2024 • 10:00'),
+              subtitle: const Text('20 April 2025 • 10:00'),
               trailing: const Icon(Icons.chevron_right),
               onTap: () {
                 // TODO: Navigate to appointment details
