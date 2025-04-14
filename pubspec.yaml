@@ -1,0 +1,43 @@
+name: obgynechat
+description: Asisten cerdas untuk ibu hamil – tanya apa saja seputar kehamilan, dapatkan tips, dan pantau perkembangan janinmu.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  table_calendar: ^3.0.9
+  http: ^1.1.0
+  shared_preferences: ^2.2.0
+  intl: ^0.18.1
+  flutter_secure_storage: ^8.0.0
+  provider: ^6.0.5
+  dio: ^5.3.2
+  json_annotation: ^4.9.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  flutter_launcher_icons: ^0.13.1
+  build_runner: ^2.4.6
+  json_serializable: ^6.7.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/images/articles/
+    - assets/images/pregnancy/
+    - assets/images/tips/
+    - assets/icons/
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icons/icon.png"
+  min_sdk_android: 21 # android min sdk min:16, default 21
+  remove_alpha_ios: true
